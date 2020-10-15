@@ -1,14 +1,14 @@
 <link rel="stylesheet" href="../../../css/admin/accueil/admin_accueil_author.css">
 <header>
     <?php
-    include_once("../../..//html/header.html");
+    require_once ("../../../php/fonctions/head.php");
     ?>
 
 </header>
 <body>
 <?php
-require_once("../../fonctions/fonctions.php");
-include_once("../../..//html/header.html");
+
+require_once ("../../../php/fonctions/head.php");
 
 $genre_name = ''; //on initialise la variable
 if (isset($_POST['genre_name'])) {

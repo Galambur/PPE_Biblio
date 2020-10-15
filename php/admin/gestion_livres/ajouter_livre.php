@@ -1,12 +1,12 @@
 <header>
     <?php
-    include_once("../../..//html/header.html");
+    require_once ("../../../php/fonctions/head.php");
     ?>
 
 </header>
 <body>
 <?php
-require_once("../../fonctions/fonctions.php");
+
 ?>
 
 <h2>Ajouter un livre</h2>

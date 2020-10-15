@@ -1,5 +1,5 @@
 <?php
-require_once("../../fonctions/fonctions.php");
+
 
 $query = "INSERT INTO genres (id_genre, genre)
             VALUES (:c_id_genre, :c_genre)";

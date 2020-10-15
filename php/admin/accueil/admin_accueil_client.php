@@ -1,12 +1,6 @@
-<header>
-    <?php
-    include_once("../../..//html/header.html");
-    ?>
-
-</header>
-<body>
 <?php
-require_once("../../fonctions/fonctions.php");
+require_once("../../../php/fonctions/head.php");
+
 
 $client_name = ''; //on initialise la variable
 if (isset($_POST['client_name'])) {

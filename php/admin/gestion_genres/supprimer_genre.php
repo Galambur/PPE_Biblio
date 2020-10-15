@@ -1,6 +1,6 @@
 <?php
-include_once("../../..//html/header.html");
-require_once("../../fonctions/fonctions.php");
+require_once ("../../../php/fonctions/head.php");
+
 
 if (isset($_GET['id_genre'])){
     $id_genre = $_GET['id_genre'];

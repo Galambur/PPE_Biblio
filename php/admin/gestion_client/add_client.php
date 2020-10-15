@@ -1,5 +1,5 @@
 <?php
-require_once("../../fonctions/fonctions.php");
+
 
 $query = "INSERT INTO clients (id_client, nom_client, prenom_client, sexe_client, dateNaiss_client, amende, id_pays, email, mdp)
             VALUES (:c_id_client, :c_nom_client, :c_prenom_client, :c_sexe_client, :c_dateNaiss_client, :c_amende, :c_id_pays, :c_email, :c_mdp)";

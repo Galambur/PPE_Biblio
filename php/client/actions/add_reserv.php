@@ -1,5 +1,5 @@
 <?php
-require_once("../../fonctions/fonctions.php");
+
 
 //var_dump($_POST);
 // Insertion dans la table

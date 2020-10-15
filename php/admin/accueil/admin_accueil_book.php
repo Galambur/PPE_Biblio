@@ -1,13 +1,7 @@
-<link rel="stylesheet" href="../../../css/admin/accueil/admin_accueil_author.css">
-<header>
-    <?php
-    include_once("../../..//html/header.html");
-    ?>
-
-</header>
-<body>
 <?php
-require_once("../../fonctions/fonctions.php");
+
+require_once ("../../../php/fonctions/head.php");
+
 
 $book_name = ''; //on initialise la variable
 if (isset($_POST['book_name'])) {
@@ -15,7 +9,7 @@ if (isset($_POST['book_name'])) {
 }
 ?>
 
-<a href="../gestion_livres/ajouter_livre.php" class="button_add">Ajouter un livre</a>
+<a href="/php/admin/gestion_livres/ajouter_livre.php" class="button_add">Ajouter un livre</a>
 
 
 

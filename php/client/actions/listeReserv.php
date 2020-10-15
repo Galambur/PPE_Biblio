@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>Le Neptune - admin page réservations</title>
-    <link rel="stylesheet" href="../../css/template.css">
-    <link rel="stylesheet" href="../../css/admin_reserv.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> <!-- pour les h2 -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> <!-- pour les h3 -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> <!-- pour les textes -->
-</head>
-
-
-<body>
-<header class="header">
-    <?php
-    include('../../html/header.html');
+<?php
+    require_once('../../../php/fonctions/head.php');
     ?>
-</header>
 
 <?php
 $date = '';

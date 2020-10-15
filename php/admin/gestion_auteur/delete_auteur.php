@@ -1,5 +1,5 @@
 <?php
-require_once("../../fonctions/fonctions.php");
+
 $bdd = getDataBase();
 
 $query_count = "SELECT COUNT(*) AS CountLivre FROM livres WHERE id_auteur=:l_id_auteur";

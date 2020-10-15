@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>Bibliothèque Montpellier</title>
-    <script type="text/javascript" src="../../../javascript/admin_accueil.js"></script>
-</head>
-<body>
 <?php
-include_once("../../..//html/header.html");
-require_once("../../fonctions/fonctions.php");
+require_once ("../../../php/fonctions/head.php");
 
 $dateDebut = ''; //on initialise la variable
 if (isset($_POST['dateDebut'])) {

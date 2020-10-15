@@ -1,5 +1,5 @@
 <?php
-require_once("../../fonctions/fonctions.php");
+
 
 $query = "INSERT INTO auteurs (id_auteur, nom_auteur, prenom_auteur, dateNaiss_auteur, id_pays)
             VALUES (:a_id_auteur, :a_nom_auteur, :a_prenom_auteur, :a_dateNaiss_auteur, :a_id_pays)";
