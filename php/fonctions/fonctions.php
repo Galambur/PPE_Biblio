@@ -20,7 +20,7 @@ function afficherErreur($erreur = null){
     if (isset($_SESSION["erreur"])){
         $valueErreur = $_SESSION["erreur"];
         if ($valueErreur  == 1){
-            $erreur = 'Veuillez contacter l\'administrateur dès les plus bref délais!!';
+            $erreur = 'Veuillez contacter l\'administrateur';
         } elseif ($valueErreur  == 2) {
             $erreur = 'Mot de passe ou email incorrect';
         } elseif ($valueErreur  == 3) {

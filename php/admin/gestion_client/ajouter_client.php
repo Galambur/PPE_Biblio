@@ -21,11 +21,8 @@
     <label for="sexe_client">Sexe :</label>
     <input type="text" name="sexe_client"  value=""/><br /><br />
 
-    <label for="dateNaiss_client">Date de naissance :</label>
+    <label for="dateNaiss_client">Date de naissance (YYYY-MM-DD) :</label>
     <input type="text" name="dateNaiss_client"  value=""/><br/><br />
-
-    <label for="amende">Son amende :</label>
-    <input type="text" name="amende"  value=""/><br/><br />
 
     <label for="id_pays">Pays :</label>
     <?php
@@ -44,7 +41,9 @@
     <input type="text" name="email"  value=""/><br/><br />
 
     <label for="mdp">Son mdp :</label>
-    <input type="text" name="mdp"  value=""/><br/><br />
+    <input type="password" name="mdp"  value=""/><br/><br />
+
+    <label for="amende"></label>
 
     <input type="submit" class="button_form" value="Ajouter"/>
 </form>

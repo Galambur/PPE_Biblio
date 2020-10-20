@@ -15,6 +15,7 @@
        <a href="admin_accueil_genre.php">Regarder la liste des genres</a><br>
         <a href="admin_accueil_client.php">Regarder la liste des clients</a><br>
         <a href="admin_show_reserv.php">Regarder la liste des réservations</a><br>
+        <a href="../../../_index.php">Index client</a><br>
     </div>
 
 

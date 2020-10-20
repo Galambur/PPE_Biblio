@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/client/actions/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/client/infos/mon_compte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fonctions/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/add_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/add_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/ajouter_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/ajouter_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/delete_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/delete_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/update_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/update_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/add_client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/add_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/add_reserv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/creation_compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/creation_compte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fonctions/fonctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/fonctions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +77,7 @@
       <workItem from="1602745836611" duration="515000" />
       <workItem from="1602747041597" duration="639000" />
       <workItem from="1602754858944" duration="2758000" />
-      <workItem from="1603184697386" duration="2094000" />
+      <workItem from="1603184697386" duration="3601000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -115,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603186411380</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="déconnexion ok">
+      <created>1603186856091</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186856091</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +151,7 @@
     <MESSAGE value="déplacé index.php" />
     <MESSAGE value="décès du site mais iz ok" />
     <MESSAGE value="connexion ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="connexion ok" />
+    <MESSAGE value="déconnexion ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="déconnexion ok" />
   </component>
 </project>

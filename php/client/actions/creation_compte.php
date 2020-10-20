@@ -11,7 +11,7 @@
 
 <h2>Ajouter un client</h2>
 
-<form action="add_client.php" method="post">
+<form action="../../admin/gestion_client/add_client.php" method="post">
     <label for="nom_client">Nom :</label>
     <input type="text" name="nom_client"  value=""/><br /><br />
 
@@ -24,10 +24,7 @@
     <label for="dateNaiss_client">Date de naissance (YYYY-MM-DD):</label>
     <input type="text" name="dateNaiss_client"  value=""/><br/><br />
 
-<!--    <label for="amende">Son amende :</label>
-    <input type="text" name="amende"  value=""/><br/><br /> -->
-
-    <label for="id_pays">Identifiant du pays :</label>
+    <label for="id_pays">Pays :</label>
     <?php
     $bdd=getDataBase();
     $countries=getAllCountries($bdd);
@@ -39,6 +36,14 @@
         }
         ?>
     </select><br/><br />
+
+    <label for="email">Email :</label>
+    <input type="text" name="email"  value=""/><br/><br />
+
+    <label for="mdp">Mot de passe:</label>
+    <input type="password" name="mdp"  value=""/><br/><br />
+
+    <label for="amende"></label>
 
     <input type="submit" class="button_form" value="Ajouter"/><br>
 </form>
