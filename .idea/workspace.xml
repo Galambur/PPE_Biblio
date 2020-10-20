@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/client/actions/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/client/infos/mon_compte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/add_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/add_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fonctions/fonctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/fonctions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fonctions/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/head.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,9 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1hxKmebjC7dgfqMaX36A3fLaEur" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Workshop2020" />
@@ -67,7 +71,7 @@
       <workItem from="1602745836611" duration="515000" />
       <workItem from="1602747041597" duration="639000" />
       <workItem from="1602754858944" duration="2758000" />
-      <workItem from="1603184697386" duration="1458000" />
+      <workItem from="1603184697386" duration="2094000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -83,7 +87,35 @@
       <option name="project" value="LOCAL" />
       <updated>1602757612970</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="connexion ok">
+      <created>1603186199547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186199547</updated>
+    </task>
+    <task id="LOCAL-00004" summary="connexion ok">
+      <created>1603186365148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186365148</updated>
+    </task>
+    <task id="LOCAL-00005" summary="connexion ok">
+      <created>1603186397137</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186397137</updated>
+    </task>
+    <task id="LOCAL-00006" summary="connexion ok">
+      <created>1603186411380</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186411380</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="déplacé index.php" />
     <MESSAGE value="décès du site mais iz ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="décès du site mais iz ok" />
+    <MESSAGE value="connexion ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="connexion ok" />
   </component>
 </project>

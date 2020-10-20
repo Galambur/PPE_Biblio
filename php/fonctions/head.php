@@ -35,7 +35,7 @@ $admin = false;
         if($id_client == null) {
             echo '<a href="/php/client/actions/creation_compte.php" class="button">Se connecter / S\'inscrire</a>';
         } else {
-            echo '<a href="#" class="button">Mon compte</a>';
+            echo '<a href="/php/client/infos/mon_compte.php" class="button">Mon compte</a>';
         }
 
         ?>
