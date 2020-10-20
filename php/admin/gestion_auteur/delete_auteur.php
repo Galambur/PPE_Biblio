@@ -1,4 +1,5 @@
 <?php
+require_once("../../../php/fonctions/head.php");
 
 $bdd = getDataBase();
 

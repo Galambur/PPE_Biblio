@@ -1,5 +1,5 @@
 <?php
-
+require_once("../../../php/fonctions/head.php");
 
 $query = "INSERT INTO livres (id_livre, nom_livre, date_parution, resume, id_genre, id_auteur)
             VALUES (:l_id_livre, :l_nom_livre, :l_date_parution, :l_resume, :l_id_genre, :l_id_auteur)";
