@@ -2,6 +2,9 @@
 require_once("../../../php/fonctions/head.php");
 
 
+
+if (isAdmin($id_client) == true){
+
 $client_name = ''; //on initialise la variable
 if (isset($_POST['client_name'])) {
     $client_name = htmlspecialchars($_POST['client_name']);
@@ -50,6 +53,10 @@ if(!empty($bdd)){
         echo "Aucun auteur ne porte ce nom";
     }
 } // fin if(!empty($bdd))
+}
+else {
+    echo $doNotHaveAccess;
+}
 ?>
 </body>
 </html>

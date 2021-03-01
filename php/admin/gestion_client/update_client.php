@@ -1,7 +1,6 @@
 <?php
-require_once ("../../../php/fonctions/head.php");
+require_once("../../../php/fonctions/head.php");
 
-var_dump($_POST);
 
 $query = "UPDATE clients 
             SET nom_client=:c_nom_client,
@@ -35,7 +34,6 @@ if ($statement->execute()) {
 } else {
     echo "Essaye encore !";
 }
-
 
 
 ?>

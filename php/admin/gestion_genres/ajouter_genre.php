@@ -6,7 +6,7 @@
 </header>
 <body>
 <?php
-
+if (isAdmin($id_client) == true){
 ?>
 
 <h2>Ajouter un client</h2>
@@ -18,5 +18,10 @@
     <input type="submit" class="button_form" value="Ajouter"/>
 </form>
 
+<?php
+} else {
+    echo $doNotHaveAccess;
+}
+?>
 
 </body>

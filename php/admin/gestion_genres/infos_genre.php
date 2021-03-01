@@ -8,6 +8,9 @@
 <?php
 
 
+if (isAdmin($id_client) == true){
+
+
 $bdd = getDataBase();
 
 
@@ -25,7 +28,10 @@ if (isset($_GET['id_genre'])){
 } else {
     echo "A problem has occured, we could not find the genre";
 }
-
+}
+else { 
+    echo $doNotHaveAccess;
+}
 
 ?>
 </body>

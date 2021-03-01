@@ -2,7 +2,6 @@
 
 require_once ("../../../php/fonctions/head.php");
 
-//var_dump($_POST);
 // Insertion dans la table
 $query = "INSERT INTO planning(dateDebut, dateFin, rendu, id_client, id_livre)
           VALUES(:c_dateDebut, :c_dateFin, :c_rendu, :c_id_client, :c_id_livre);";

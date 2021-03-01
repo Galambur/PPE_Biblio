@@ -7,6 +7,8 @@
 <body>
 <?php
 
+if (isAdmin($id_client) == true){
+
 
 $bdd = getDataBase();
 
@@ -32,6 +34,9 @@ echo '<h2>' . "Informations de " . $book->nom_livre . " par " . $book->prenom_au
 echo "Date de parution : " . $book->date_parution . '<br>' . " Son genre : " . $book->genre . '<br>' .
     "Résumé : " . $book->resume . '<br>';
 
-
+    } else 
+    {
+        echo $doNotHaveAccess;
+    }
 ?>
 </body>

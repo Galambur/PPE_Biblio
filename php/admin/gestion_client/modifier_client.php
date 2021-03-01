@@ -1,6 +1,7 @@
 <?php
 require_once("../../../php/fonctions/head.php");
 
+if (isAdmin($id_client) == true){
 
 $client = null;
 
@@ -55,4 +56,9 @@ if (isset($_GET['id_client'])){
 
     <input type="submit" value="Valider"/>
 </form>
+<?php
+}
+else {
+    echo $doNotHaveAccess;
+}
 

@@ -3,14 +3,21 @@
 function getDataBase()
 {
     try {
-        // $bdd = new PDO('mysql:host=mysql2.montpellier.epsi.fr;dbname=biblio;charset=utf8',
-        //            'gaelle.derambure', '852HTG', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+         //$bdd = new PDO('mysql:host=mysql2.montpellier.epsi.fr;dbname=biblio;charset=utf8',
+         //           'gaelle.derambure', '852HTG', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         $bdd = new PDO('mysql:host=localhost;dbname=biblio;charset=utf8',
             'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
     } catch (Exception $exception) {
         $bdd = null;
     }
     return $bdd;
+}
+
+function isAdmin($id){
+    if ($id == 0){
+        return true;
+    }
+    return false;
 }
 
 function afficherErreur($erreur = null){
@@ -81,7 +88,6 @@ function getListe(PDO $bdd,$fromTable,Array $cond = [],Array $condLike = [],$ask
         $para = ':p_'.$key;
         $statement->bindValue($para, $arg);
     }
-    //var_dump($statement);
     //On réalise la requète et on renvoie le résultat
     $liste = null;
     if ($statement->execute()) {

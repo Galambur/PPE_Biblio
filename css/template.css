@@ -1,8 +1,58 @@
+
+
+
 a {
-  text-decoration: none;
-  color: grey;
+    text-decoration: none;
+    color: #5e5e5e;
+    font-family: 'Varela Round', sans-serif;
 }
 
 a:hover {
   opacity: 0.8;
 }
+
+h2 {
+    font-family: 'Muli', sans-serif;
+}
+
+h3 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.header {
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    line-height: normal;
+    background-color: #A9CEB0;
+}
+h1 {
+    font-family: 'Muli', sans-serif;
+    color: #001203;
+    float: left;
+    }
+
+.button {
+    background-color: #B3EFBD;
+    border: 1px;
+    border-style: solid;
+    border-color: #2B823A;
+    border-radius: 5px;
+    color: #001203;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    width: 200px;
+}
+
+    .button:hover {
+        opacity: 0.8;
+    }

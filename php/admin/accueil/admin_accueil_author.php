@@ -7,6 +7,7 @@
 <body>
 <?php
 
+if (isAdmin($id_client)) {
 
 $author_name = ''; //on initialise la variable
 if (isset($_POST['author_name'])) {
@@ -63,6 +64,10 @@ if(!empty($bdd)){
         echo "Aucun auteur ne porte ce nom";
     }
 } // fin if(!empty($bdd))
+}
+else {
+    echo $doNotHaveAccess;
+}
 ?>
 </body>
 </html>

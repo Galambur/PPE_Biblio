@@ -36,7 +36,6 @@ if (!empty($bdd)) {
     // Etape 2 : Obtention des informations
     $reservs = getAllReserv($bdd, $date);
     if (!empty($reservs)) {
-        //var_dump($reservs);
         // Etape 3 : Affichage
         foreach ($reservs as $reserv) {
             // Afficher

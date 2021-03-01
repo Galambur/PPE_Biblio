@@ -1,7 +1,6 @@
 <?php
 require_once("../../../php/fonctions/head.php");
 
-var_dump($_POST);
 
 // Supprimer dans la table
 $query = "DELETE FROM livres 

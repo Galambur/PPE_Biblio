@@ -2,6 +2,8 @@
 
 require_once ("../../../php/fonctions/head.php");
 
+if (isAdmin($id_client) == true){
+
 
 $book_name = ''; //on initialise la variable
 if (isset($_POST['book_name'])) {
@@ -54,6 +56,10 @@ if(!empty($bdd)){
         echo "Aucun livre ne porte ce nom";
     }
 } // fin if(!empty($bdd))
+}
+else {
+    echo $doNotHaveAccess;
+}
 ?>
 </body>
 </html>

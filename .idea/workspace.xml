@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
+    <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="géré le fait qu'on pouvait accéder aux pages admin en étant pas admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/add_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/add_auteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/ajouter_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/ajouter_auteur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/delete_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/delete_auteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/infos_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/infos_auteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/modifier_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/modifier_auteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/supprimer_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/supprimer_auteur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/update_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/update_auteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/add_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_genres/add_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/ajouter_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/ajouter_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/delete_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/delete_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/infos_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/infos_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/modifier_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/modifier_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/supprimer_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/supprimer_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/update_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/update_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/ajouter_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_genres/ajouter_genre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/delete_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_genres/delete_genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/add_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/add_livre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/infos_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_genres/infos_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/supprimer_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_genres/supprimer_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/ajouter_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/ajouter_livre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/delete_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/delete_livre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/infos_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/infos_livre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/modifier_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/modifier_livre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/supprimer_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/supprimer_livre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/update_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/update_livre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/ajouter_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/ajouter_reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/add_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/add_reserv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/listeReserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/listeReserv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/mon_compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/mon_compte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fonctions/fonctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/fonctions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fonctions/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/head.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Workshop2020" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -76,7 +103,8 @@
       <workItem from="1602745836611" duration="515000" />
       <workItem from="1602747041597" duration="639000" />
       <workItem from="1602754858944" duration="2758000" />
-      <workItem from="1603184697386" duration="3875000" />
+      <workItem from="1603184697386" duration="4974000" />
+      <workItem from="1614604988378" duration="174000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -134,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603188360044</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="rajouté les require once là où il y avait besoin">
+      <created>1603188698562</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603188698562</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +194,8 @@
     <MESSAGE value="connexion ok" />
     <MESSAGE value="déconnexion ok" />
     <MESSAGE value="création compte ok&#10;mode admin ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="création compte ok&#10;mode admin ok" />
+    <MESSAGE value="rajouté les require once là où il y avait besoin" />
+    <MESSAGE value="géré le fait qu'on pouvait accéder aux pages admin en étant pas admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="géré le fait qu'on pouvait accéder aux pages admin en étant pas admin" />
   </component>
 </project>

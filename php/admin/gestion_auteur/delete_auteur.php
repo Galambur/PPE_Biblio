@@ -12,7 +12,6 @@ $statement_count->execute();
 $result = $statement_count->fetch(PDO::FETCH_OBJ);
 
 $count = intval($result->CountLivre);
-var_dump($count);
 
 if ($count == 0){
     echo "ca degage";

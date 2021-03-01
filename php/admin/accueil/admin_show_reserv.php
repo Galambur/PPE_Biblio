@@ -1,6 +1,9 @@
 <?php
 require_once ("../../../php/fonctions/head.php");
 
+
+if (isAdmin($id_client) == true){
+
 $dateDebut = ''; //on initialise la variable
 if (isset($_POST['dateDebut'])) {
     $dateDebut = htmlspecialchars($_POST['dateDebut']);
@@ -31,6 +34,10 @@ if(!empty($bdd)){
             echo 'La reservation commence le ' . $reserv->dateDebut . ' et se termine le ' . $reserv->dateFin ." faite par " .  $reserv->nom_client . " " . $reserv->prenom_client . " pour le livre " . $reserv->nom_livre . '<br>';
         }
     }
+}
+
+} else{
+    echo $doNotHaveAccess;
 }
 
 

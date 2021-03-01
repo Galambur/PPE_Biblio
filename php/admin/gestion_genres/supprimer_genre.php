@@ -2,6 +2,9 @@
 require_once ("../../../php/fonctions/head.php");
 
 
+if (isAdmin($id_client) == true){
+
+
 if (isset($_GET['id_genre'])){
     $id_genre = $_GET['id_genre'];
 
@@ -33,3 +36,9 @@ if (isset($_GET['id_genre'])){
 
     <input type="submit" value="Supprimer"/>
 </form>
+
+<?php
+} else {
+    echo $doNotHaveAccess;
+}
+?>

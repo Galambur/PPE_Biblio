@@ -1,6 +1,7 @@
 <?php
 require_once ("../../../php/fonctions/head.php");
 
+if (isAdmin($id_client) == true){
 
 $book = null;
 
@@ -46,4 +47,9 @@ if (isset($_GET['id_livre'])){
 
     <input type="submit" value="Valider"/>
 </form>
+<?php
+} else {
+    echo $doNotHaveAccess;
+}
+?>
 

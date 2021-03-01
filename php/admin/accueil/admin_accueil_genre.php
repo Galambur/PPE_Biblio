@@ -3,6 +3,9 @@
 
 require_once ("../../../php/fonctions/head.php");
 
+if (isAdmin($id_client) == true){
+
+
 $genre_name = ''; //on initialise la variable
 if (isset($_POST['genre_name'])) {
     $genre_name = htmlspecialchars($_POST['genre_name']);
@@ -34,6 +37,10 @@ if(!empty($bdd)){
 
         }
     }
+}
+}
+else {
+    echo $doNotHaveAccess;
 }
 
 

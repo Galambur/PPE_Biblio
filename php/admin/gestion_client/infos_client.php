@@ -7,6 +7,7 @@
 <body>
 <?php
 
+if (isAdmin($id_client) == true){
 
 $bdd = getDataBase();
 
@@ -39,6 +40,9 @@ foreach ($reservations AS $reservation){
 
 echo '<a href="../gestion_reservations/ajouter_reservation.php">Ajouter une réservation au client';
 
-
+}
+else {
+    echo $doNotHaveAccess;
+}
 ?>
 </body>

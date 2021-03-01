@@ -1,6 +1,8 @@
 <?php
 require_once ("../../../php/fonctions/head.php");
 
+if (isAdmin($id_client) == true){
+
 
 if (isset($_GET['id_livre'])){
     $id_livre = $_GET['id_livre'];
@@ -45,3 +47,8 @@ if (isset($_GET['id_livre'])){
 
     <input type="submit" value="Supprimer"/>
 </form>
+<?php
+} else {
+    echo $doNotHaveAccess;
+}
+?>

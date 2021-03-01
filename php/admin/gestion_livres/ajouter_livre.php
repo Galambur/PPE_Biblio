@@ -6,6 +6,7 @@
 </header>
 <body>
 <?php
+if (isAdmin($id_client) == true){
 
 ?>
 
@@ -80,6 +81,12 @@
 
     <input type="submit" class="button_form" value="Ajouter"/>
 </form>
+
+<?php
+} else {
+    echo $doNotHaveAccess;
+}
+?>
 
 
 </body>

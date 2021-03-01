@@ -26,17 +26,17 @@ if (isset($_SESSION['id_client'])){
         $statement->closeCursor();
     }
 }
-
-echo '<h2>' . "Informations de " . $client->nom_client . " " . $client->prenom_client . '</h2>';
-echo "Date de naissance : " . $client->dateNaiss_client . '<br>' . " Son pays : " . $client->nom_pays . '<br><br>';
-echo"Vos réservations : " . '<br>';
+echo '<h2>' . $client->nom_client . " " . $client->prenom_client . '</h2>';
+echo "<h3>Date de naissance : " . $client->dateNaiss_client . '<br>' . " Pays : " . $client->nom_pays . '</h3>';
+echo "<p>Vos réservations : " . '</p>';
 $reservations = getAllReservationsByClient($bdd, $client->id_client);
 
 foreach ($reservations AS $reservation){
-    echo "Reservation de " . $reservation->nom_livre . " - " . $reservation->prenom_auteur . " " . $reservation->nom_auteur . " à partir de " . $reservation->dateDebut . " jusqu'à " . $reservation->dateFin . '<br>';
+    echo "<p>- " . $reservation->nom_livre . " - " . $reservation->prenom_auteur . " " . $reservation->nom_auteur . " du " . $reservation->dateDebut . " au " . $reservation->dateFin . '</p>';
 }
 
-echo '<a href="../actions/logout.php">Se déconnecter</a>';
+echo '<a href="modifier_client.php?id_client=' . $id_client .'"">Modifier mes informations</a><br>';
+echo '<a href="../actions/logout.php">Se déconnecter</a><br>';
 
 
 ?>
