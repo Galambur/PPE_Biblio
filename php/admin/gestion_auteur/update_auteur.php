@@ -22,7 +22,7 @@ $statement->bindParam(':a_id_auteur', $_POST['id_auteur']);
 
 if ($statement->execute()) {
     // Rediriger vers la page de liste des publishers
-    header('Location: ../accueil/admin_accueil_author.php');
+    header('Location: ../../client/accueil/client_accueil_author.php');
 } else {
     echo "Essaye encore !";
 }

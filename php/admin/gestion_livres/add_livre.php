@@ -17,7 +17,7 @@ $statement->bindParam(':l_id_auteur', $_POST['id_auteur']);
 
 
 if($statement->execute()){
-    header('Location: ../accueil/admin_accueil_book.php');
+    header('Location: ../../client/accueil/client_accueil_book.php');
 } else {
     echo "Essaye encore";
 }

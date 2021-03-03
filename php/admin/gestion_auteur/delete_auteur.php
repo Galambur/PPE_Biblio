@@ -22,7 +22,7 @@ if ($count == 0){
     $statement->bindParam(':a_id_auteur', $_POST['id_auteur']);
 
     if ($statement->execute()){
-        header('Location: ../accueil/admin_accueil_author.php');
+        header('Location: ../../client/accueil/client_accueil_author.php');
     } else {
         echo "Essaye encore";
     }

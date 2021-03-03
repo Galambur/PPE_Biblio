@@ -15,7 +15,7 @@ $statement->bindParam(':a_dateNaiss_auteur', $_POST['dateNaiss_auteur']);
 $statement->bindParam(':a_id_pays', $_POST['id_pays']);
 
 if($statement->execute()){
-    header('Location: ../accueil/admin_accueil_author.php');
+    header('Location: ../../client/accueil/client_accueil_author.php');
 } else {
     echo "Essaye encore";
 }

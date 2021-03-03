@@ -15,7 +15,7 @@ $statement->bindParam(':c_id_genre', $_POST['id_genre']);
 // Etape 2.3 : exécution
 if ($statement->execute()) {
     // Rediriger vers la page de liste des chambres
-    header('Location: ../accueil/admin_accueil_genre.php');
+    header('Location: ../../client/accueil/client_accueil_genre.php');
 } else {
     echo "Essaye encore !";
 }

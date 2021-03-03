@@ -25,7 +25,7 @@ $statement->bindParam(':l_id_livre', $_POST['id_livre']);
 
 if ($statement->execute()) {
     // Rediriger vers la page de liste des publishers
-    header('Location: ../accueil/admin_accueil_book.php');
+    header('Location: ../../client/accueil/client_accueil_book.php');
 } else {
     echo "Essaye encore !";
 }
