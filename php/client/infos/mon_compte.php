@@ -28,6 +28,7 @@ if (isset($_SESSION['id_client'])){
 }
 echo '<h2>' . $client->nom_client . " " . $client->prenom_client . '</h2>';
 echo "<h3>Date de naissance : " . $client->dateNaiss_client . '<br>' . " Pays : " . $client->nom_pays . '</h3>';
+echo "<h3>Votre amende : " . $client->amende . '</h3>';
 echo "<p>Vos réservations : " . '</p>';
 $reservations = getAllReservationsByClient($bdd, $client->id_client);
 

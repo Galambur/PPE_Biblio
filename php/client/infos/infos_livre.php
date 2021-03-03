@@ -31,7 +31,7 @@ if (isset($_GET['id_livre'])){
 echo '<h2>' . "Informations de " . $book->nom_livre . " par " . $book->prenom_auteur . " " . $book->nom_auteur . '</h2>';
 echo "Date de parution : " . $book->date_parution . '<br>' . " Son genre : " . $book->genre . '<br>' .
     "Résumé : " . $book->resume . '<br>';
+echo "<a href='../actions/ajouter_reserv.php?id_livre=" . $book->id_livre .  "&id_client=" . $id_client . "'>Réserver ce livre</a>";
 ?>
 
-<a href="../actions/ajouter_reserv.php">Réserver ce livre</a>
 </body>
