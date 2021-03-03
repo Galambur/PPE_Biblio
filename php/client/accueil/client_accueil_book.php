@@ -42,9 +42,9 @@ if(!empty($bdd)){
     if (!empty($books)){
         foreach ($books as $book){
             echo '<div class="eachBook">';
-            echo 'Livre numero ' . $book->id_livre . ' <a href="../infos/infos_livre.php?id_livre=' . $book->id_livre . '">' . $book->nom_livre . '</a>' . " écrit par " .
+            echo '<p>Livre numero ' . $book->id_livre . ' <a href="../infos/infos_livre.php?id_livre=' . $book->id_livre . '">' . $book->nom_livre . '</a>' . " écrit par " .
                 '<a href="../infos/infos_auteur.php?id_auteur=' . $book->id_auteur . '">'  . $book->nom_auteur . " " . $book->prenom_auteur . '</a>' . " paru le " .
-                $book->date_parution . " son genre est : " . $book->genre . '<br>' .
+                $book->date_parution . " son genre est : " . $book->genre . '</p><br>' .
                 "Résumé : " . $book->resume . '<br><br>';
 
             echo '</div>'; // fin de la div eachAuthor

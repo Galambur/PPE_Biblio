@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\html",
+    "\\html\\admin",
+    "\\html\\admin\\accueil",
+    "\\php",
+    "\\php\\client",
+    "\\php\\client\\accueil",
+    "\\php\\client\\actions",
+    "\\php\\client\\infos",
+    "\\php\\fonctions"
+  ],
+  "SelectedNode": "\\php\\client\\infos\\mon_compte.php",
+  "PreviewInSolutionExplorer": false
+}

@@ -46,7 +46,7 @@ if (isset($_GET['id_client'])){
     <input type="text" name="email" value="<?= $client->email ?>"/><br><br>
 
     <label for="mdp">Mot de passe :</label>
-    <input type="text" name="mdp" value="<?= $client->mdp ?>"/><br><br>
+    <input type="password" name="mdp" value="<?= $client->mdp ?>"/><br><br>
 
     <input type="hidden" name="id_client" value="<?= $client->id_client ?>"/>
     <input type="hidden" name="amende" value="<?= $client->amende ?>"/><br><br>

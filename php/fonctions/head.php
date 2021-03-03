@@ -22,7 +22,6 @@ $admin = false;
 <head>
     <meta charset="utf-8">
     <title>Bibliothèque Montpellier</title>
-    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/template.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> <!-- style du h1 -->

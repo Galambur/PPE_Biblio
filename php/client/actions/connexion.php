@@ -14,7 +14,7 @@
     <input type="text" name="email"  value=""/><br /><br />
 
     <label for="mdp">Mot de passe :</label>
-    <input type="text" name="mdp"  value=""/><br /><br />
+    <input type="password" name="mdp"  value=""/><br /><br />
 
     <input type="submit" class="button_form" value="Valider"/>
 </form>
