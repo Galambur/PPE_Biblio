@@ -14,7 +14,7 @@ function getDataBase()
 }
 
 function isAdmin($id){
-    if ($id == 0){
+    if ($id === '0'){
         return true;
     }
     return false;

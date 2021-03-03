@@ -6,11 +6,6 @@
 </header>
 <body>
 
-<?php
-var_dump($_GET['id_livre']);
-var_dump($_GET['id_client']);
-?>
-
 <h2>Ajouter une réservation</h2><br>
 
 <form action="add_reserv.php" method="post">

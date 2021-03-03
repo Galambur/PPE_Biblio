@@ -10,6 +10,10 @@ $author_name = ''; //on initialise la variable
 if (isset($_POST['author_name'])) {
     $author_name = htmlspecialchars($_POST['author_name']);
 }
+
+if(isAdmin($id_client)){
+    echo '<a href="../../admin/gestion_auteur/ajouter_auteur.php" class="button_add">Ajouter un auteur</a>';
+}
 ?>
 
 <div class="top_research">
@@ -30,14 +34,14 @@ if (!empty($bdd)) {
             ?>
             <div class="eachAuthor">
                 <p>(id:<?= $author->id_auteur ?>) <a
-                            href="../../admin/gestion_auteur/infos_auteur.php?id_auteur=<?= $author->id_auteur ?>"><?= $author->prenom_auteur ?> <?= $author->nom_auteur ?></a>
+                            href="../infos/infos_auteur.php?id_auteur=<?= $author->id_auteur ?>"><?= $author->prenom_auteur ?> <?= $author->nom_auteur ?></a>
                     (<?= $author->dateNaiss_auteur ?>)<br>
                     <?php
                     $books = getAllBooksByAuthor($bdd, $author->id_auteur);
                     if (!empty($books)) {
                         echo "Ses livres :<br>";
                         foreach ($books as $book) {
-                            echo ' <a href="../../admin/gestion_livres/infos_livre.php?id_livre=' . $book->id_livre . '">' . $book->nom_livre . '</a>' . "<br>";
+                            echo ' <a href="../infos/infos_livre.php?id_livre=' . $book->id_livre . '">' . $book->nom_livre . '</a>' . "<br>";
                         }
                     } else {
                         echo 'Nous ne possédons aucun livre écrit par cet auteur' . '<br>';

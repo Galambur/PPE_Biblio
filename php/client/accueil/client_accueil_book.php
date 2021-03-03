@@ -9,6 +9,10 @@ $book_name = ''; //on initialise la variable
 if (isset($_POST['book_name'])) {
     $book_name = htmlspecialchars($_POST['book_name']);
 }
+
+if(isAdmin($id_client)){
+    echo '<a href="../../admin/gestion_livres/ajouter_livre.php" class="button_add">Ajouter un livre</a>';
+}
 ?>
 
 <div class="top_research">
