@@ -31,8 +31,13 @@ if(!empty($bdd)){
     $reservs = getAllReservations($bdd, $dateDebut);
     if (!empty($reservs)){
         foreach ($reservs as $reserv){
-            echo 'La reservation commence le ' . $reserv->dateDebut . ' et se termine le ' . $reserv->dateFin ." faite par " .  $reserv->nom_client . " " . $reserv->prenom_client . " pour le livre " . $reserv->nom_livre . '<br>';
-        }
+            ?>
+            <p>La reservation commence le <span id="date"><?=$reserv->dateDebut ?></span> et se termine le <span id="date"><?=$reserv->dateFin ?></span> faite par
+                <a href="../gestion_client/infos_client.php?id_client=<?= $reserv->id_client ?>"><?= $reserv->nom_client?> <?= $reserv->prenom_client ?></a> pour le livre
+                <a href="../gestion_livres/infos_livre.php?id_livre=<?= $reserv->id_livre ?>"><?= $reserv->nom_livre ?></a>
+                 </p>
+        <?php
+}
     }
 }
 

@@ -1,3 +1,40 @@
+/* HEADER */
+.header {
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: normal;
+    background-color: #A9CEB0;
+}
+
+h1 {
+    margin-left : 20px;
+    font-family: 'Muli', sans-serif;
+    color: #001203;
+    float: left;
+}
+
+.button {
+    background-color: #B3EFBD;
+    border: 1px solid #2B823A;
+    border-radius: 5px;
+    color: #001203;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin-right : 20px;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+
+/* GENERAL */
 .option_recherche {
     display: flex;
     flex-direction: column;
@@ -27,37 +64,16 @@ p {
     font-family: 'Varela Round', sans-serif;
 }
 
-.header {
-    display: inline;
-    display: flex;
-    justify-content: space-between;
-    line-height: normal;
-    background-color: #A9CEB0;
+.button_add{
+    font-size: 20px;
+    color:#08250C;
 }
 
-h1 {
-    font-family: 'Muli', sans-serif;
-    color: #001203;
-    float: left;
+/* LISTES */
+.eachBook .eachAuthor{
+    margin : 0px 0px 5px 0px;
 }
 
-.button {
-    background-color: #B3EFBD;
-    border: 1px;
-    border-style: solid;
-    border-color: #2B823A;
-    border-radius: 5px;
-    color: #001203;
-    padding: 10px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    line-height: 50px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 15px;
-    width: 200px;
-}
-
-.button:hover {
-    opacity: 0.8;
+#date {
+    color : #154A1C;
 }

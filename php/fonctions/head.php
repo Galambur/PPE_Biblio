@@ -3,18 +3,11 @@ session_start();
 require_once( 'fonctions.php');
 $id_client = null;
 $doNotHaveAccess = "<h2>Vous n'avez pas acces a cette page</h2>";
-$Compte = 'Se connecter/Inscription';
-$lien = "LoginRegister.php";
 if (isset($_SESSION['id_client'])){
     $id_client = $_SESSION['id_client'];
-    $Compte = 'Mon Compte';
-    $lien = "MonCompte.php";
 }
-var_dump($id_client);
 
 $bdd = getDataBase();
-$pageAdmin = null;
-$admin = false;
 
 ?>
 <!DOCTYPE html>

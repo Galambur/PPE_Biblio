@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/accueil/client_accueil_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/accueil/client_accueil_book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/infos/modifier_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/modifier_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/fonctions/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/head.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,7 +79,7 @@
       <workItem from="1614605641589" duration="7000" />
       <workItem from="1614766248466" duration="2327000" />
       <workItem from="1614769546312" duration="1585000" />
-      <workItem from="1614780101090" duration="750000" />
+      <workItem from="1614780101090" duration="3799000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -166,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614780251348</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commencé à changer le css">
+      <created>1614780953175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614780953175</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +200,7 @@
     <MESSAGE value="rajouté les require once là où il y avait besoin" />
     <MESSAGE value="géré le fait qu'on pouvait accéder aux pages admin en étant pas admin" />
     <MESSAGE value="l'id du livre et du client s'envoient automatiquement, il faut prendre en compte si c'est un admin qui le fait et lui proposer la possibilité de mettre l'id du client lui même peut être ?&#10;réglé d'autre problemes aussi" />
-    <option name="LAST_COMMIT_MESSAGE" value="l'id du livre et du client s'envoient automatiquement, il faut prendre en compte si c'est un admin qui le fait et lui proposer la possibilité de mettre l'id du client lui même peut être ?&#10;réglé d'autre problemes aussi" />
+    <MESSAGE value="commencé à changer le css" />
+    <option name="LAST_COMMIT_MESSAGE" value="commencé à changer le css" />
   </component>
 </project>
