@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fonctions/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/admin/accueil/admin_accueil_author.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/admin/accueil/admin_accueil.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/header.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +75,7 @@
       <workItem from="1614605641589" duration="7000" />
       <workItem from="1614766248466" duration="2327000" />
       <workItem from="1614769546312" duration="1585000" />
-      <workItem from="1614780101090" duration="3799000" />
+      <workItem from="1614780101090" duration="4053000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -172,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614780953175</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="commencé à changer le css">
+      <created>1614784079667</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614784079667</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
