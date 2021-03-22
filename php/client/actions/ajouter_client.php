@@ -5,7 +5,7 @@
 
 </header>
 <body>
-<div class="connexion_body">
+<div class="centered_body">
     <div class="connexion_form">
         <h2>Créer un compte</h2>
 

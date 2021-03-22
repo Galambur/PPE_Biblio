@@ -73,19 +73,22 @@ h1 {
     padding : 10px;
 }
 
-.connexion_form {
+.centered_alone {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.connexion_body {
+.centered_body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
+
+
+
 
 
 /* GENERAL */

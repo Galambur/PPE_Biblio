@@ -30,7 +30,7 @@ if (isAdmin($id_client) == true) {
                 ?>
                 <p>(id:<?= $client->id_client ?>) <a
                             href="../gestion_client/infos_client.php?id_client=<?= $client->id_client ?>"><?= $client->nom_client ?> <?= $client->prenom_client ?></a><br>
-                    <a href="../gestion_client/modifier_client.php?id_client=<?= $client->id_client ?>">Modifier</a> ou
+                    <a href="../../client/actions/modifier_client=<?= $client->id_client ?>">Modifier</a> ou
                     <a href="../gestion_client/supprimer_client.php?id_client=<?= $client->id_client ?>">Supprimer</a>
                     ce client</p>
                 <?php
