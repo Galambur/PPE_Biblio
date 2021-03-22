@@ -1,11 +1,11 @@
 <?php
-require_once ("../../../php/fonctions/head.php");
+require_once("../../../php/fonctions/head.php");
 
 
 if (isAdmin($id_client) == true){
 
 
-if (isset($_GET['id_genre'])){
+if (isset($_GET['id_genre'])) {
     $id_genre = $_GET['id_genre'];
 
     $bdd = getDataBase();
@@ -23,22 +23,24 @@ if (isset($_GET['id_genre'])){
 }
 ?>
 
-<h2>Supprimer le genre</h2>
+<div class="centered_alone">
+    <h2>Supprimer le genre</h2>
 
-<form action="delete_genre.php" method="post">
-    <label for="id_genre">Identifiant : </label>
-    <input type="text" name="id_genre" disabled value="<?= $genre->id_genre ?>"/><br><br>
+    <form action="delete_genre.php" method="post">
+        <label for="id_genre">Identifiant : </label>
+        <input type="text" name="id_genre" disabled value="<?= $genre->id_genre ?>"/><br><br>
 
-    <label for="genre">Prenom :</label>
-    <input type="text" name="genre" disabled value="<?= $genre->genre ?>"/><br><br>
+        <label for="genre">Prenom :</label>
+        <input type="text" name="genre" disabled value="<?= $genre->genre ?>"/><br><br>
 
-    <input type="hidden" name="id_genre" value="<?= $genre->id_genre ?>"/>
+        <input type="hidden" name="id_genre" value="<?= $genre->id_genre ?>"/>
 
-    <input type="submit" value="Supprimer"/>
-</form>
+        <input type="submit" value="Supprimer"/>
+    </form>
 
-<?php
-} else {
-    echo $doNotHaveAccess;
-}
-?>
+    <?php
+    } else {
+        echo $doNotHaveAccess;
+    }
+    ?>
+</div>

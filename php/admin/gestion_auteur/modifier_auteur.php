@@ -22,6 +22,7 @@ if (isAdmin($id_client) == true){
         }
     }
     ?>
+    <div class="centered_alone">
     <h2>Modifier un auteur</h2>
 
     <form action="update_auteur.php" method="post">
@@ -49,4 +50,5 @@ if (isAdmin($id_client) == true){
     else {
         echo $doNotHaveAccess;
     }
-
+    ?>
+</div>

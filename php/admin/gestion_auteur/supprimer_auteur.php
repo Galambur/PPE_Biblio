@@ -4,24 +4,25 @@ require_once("../../../php/fonctions/head.php");
 
 if (isAdmin($id_client) == true){
 
-    if (isset($_GET['id_auteur'])){
-        $id_auteur = $_GET['id_auteur'];
+if (isset($_GET['id_auteur'])) {
+    $id_auteur = $_GET['id_auteur'];
 
-        $bdd = getDataBase();
+    $bdd = getDataBase();
 
-        $query = "SELECT * FROM auteurs AS a WHERE a.id_auteur= :a_id_auteur";
+    $query = "SELECT * FROM auteurs AS a WHERE a.id_auteur= :a_id_auteur";
 
-        $statement = $bdd->prepare($query);
-        $statement->bindParam(':a_id_auteur', $id_auteur);
+    $statement = $bdd->prepare($query);
+    $statement->bindParam(':a_id_auteur', $id_auteur);
 
-        if ($statement->execute()) {
-            $author = $statement->fetch(PDO::FETCH_OBJ);
-            // Fermeture de la ressource
-            $statement->closeCursor();
-        }
+    if ($statement->execute()) {
+        $author = $statement->fetch(PDO::FETCH_OBJ);
+        // Fermeture de la ressource
+        $statement->closeCursor();
     }
-    ?>
+}
+?>
 
+<div class="centered_alone">
     <h2>Supprimer l'auteur</h2>
 
     <form action="delete_auteur.php" method="post">
@@ -46,6 +47,8 @@ if (isAdmin($id_client) == true){
     </form>
     <?php
     }
-    else{
+    else {
         echo "<h2>Vous  n'avez pas acces a cette page</h2>";
     }
+    ?>
+</div>
