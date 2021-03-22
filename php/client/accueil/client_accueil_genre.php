@@ -23,21 +23,25 @@ if (isAdmin($id_client)) {
     </form>
 </div>
 
-<?php
-$bdd = getDataBase();
-$genres = null;
+<div class="centered_alone">
+    <?php
+    $bdd = getDataBase();
+    $genres = null;
 
-if (!empty($bdd)) {
-    $genres = getAllGenres($bdd, $genre_name);
-    if (!empty($genres)) {
-        foreach ($genres as $genre) {
-            echo '<p>(id:' . $genre->id_genre . ') <a href="../infos/infos_genre.php?id_genre=' . $genre->id_genre . '">' . $genre->genre . ' </a><br>';
-            if (isAdmin($id_client)) {
-                echo '<a href="../../admin/gestion_genres/supprimer_genre.php?id_genre=' . $genre->id_genre . '">Supprimer</a></p>';
+    if (!empty($bdd)) {
+        $genres = getAllGenres($bdd, $genre_name);
+        if (!empty($genres)) {
+            foreach ($genres as $genre) {
+                echo '<div class="object_of_list">';
+                echo '<p>(id:' . $genre->id_genre . ') <a class="object_title" href="../infos/infos_genre.php?id_genre=' . $genre->id_genre . '">' . $genre->genre . ' </a><br>';
+                if (isAdmin($id_client)) {
+                    echo '<a class="object_action" href="../../admin/gestion_genres/supprimer_genre.php?id_genre=' . $genre->id_genre . '">Supprimer</a></p>';
+                }
+                echo '</div>';
             }
         }
     }
-}
-?>
+    ?>
+</div>
 </body>
 </html>

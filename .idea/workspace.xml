@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/client/actions/listeReserv.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/modifier_client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/ajouter_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_genres/ajouter_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/accueil/client_accueil_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/accueil/client_accueil_author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/accueil/client_accueil_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/accueil/client_accueil_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/accueil/client_accueil_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/accueil/client_accueil_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/ajouter_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/ajouter_reserv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/infos_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/infos_auteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/infos_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/infos_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/infos_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/infos_livre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/mon_compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/mon_compte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fonctions/fonctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/fonctions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +93,7 @@
       <workItem from="1614780101090" duration="8484000" />
       <workItem from="1616075762268" duration="604000" />
       <workItem from="1616167846287" duration="3048000" />
-      <workItem from="1616412191707" duration="3994000" />
+      <workItem from="1616412191707" duration="9866000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -225,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616415795037</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="sécurisé la modification d'informations">
+      <created>1616416210457</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1616416210457</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

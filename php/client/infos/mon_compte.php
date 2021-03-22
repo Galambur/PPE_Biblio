@@ -38,8 +38,8 @@
             echo "<p>- " . $reservation->nom_livre . " - " . $reservation->prenom_auteur . " " . $reservation->nom_auteur . " du " . $reservation->dateDebut . " au " . $reservation->dateFin . '</p>';
         }
 
-        echo '<a href="modifier_client.php?id_client=' . $id_client . '"">Modifier mes informations</a><br>';
-        echo '<a href="../actions/logout.php">Se déconnecter</a><br>';
+        echo '<a class="object_action" href="modifier_client.php?id_client=' . $id_client . '"">Modifier mes informations</a><br>';
+        echo '<a class="object_action" href="../actions/logout.php">Se déconnecter</a><br>';
 
 
         ?>

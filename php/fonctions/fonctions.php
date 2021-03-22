@@ -3,8 +3,8 @@
 function getDataBase()
 {
     try {
-         //$bdd = new PDO('mysql:host=mysql2.montpellier.epsi.fr;dbname=biblio;charset=utf8',
-         //           'gaelle.derambure', '852HTG', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+        //$bdd = new PDO('mysql:host=mysql2.montpellier.epsi.fr;dbname=biblio;charset=utf8',
+        //           'gaelle.derambure', '852HTG', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         $bdd = new PDO('mysql:host=localhost;dbname=biblio;charset=utf8',
             'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
     } catch (Exception $exception) {
@@ -13,34 +13,36 @@ function getDataBase()
     return $bdd;
 }
 
-function isAdmin($id){
-    if ($id === '0'){
+function isAdmin($id)
+{
+    if ($id === '0') {
         return true;
     }
     return false;
 }
 
-function afficherErreur($erreur = null){
-    if (!empty($erreur)){
-        $_SESSION["erreur"]=$erreur;
+function afficherErreur($erreur = null)
+{
+    if (!empty($erreur)) {
+        $_SESSION["erreur"] = $erreur;
     }
-    if (isset($_SESSION["erreur"])){
+    if (isset($_SESSION["erreur"])) {
         $valueErreur = $_SESSION["erreur"];
-        if ($valueErreur  == 1){
+        if ($valueErreur == 1) {
             $erreur = 'Veuillez contacter l\'administrateur';
-        } elseif ($valueErreur  == 2) {
+        } elseif ($valueErreur == 2) {
             $erreur = 'Mot de passe ou email incorrect';
-        } elseif ($valueErreur  == 3) {
+        } elseif ($valueErreur == 3) {
             $erreur = 'Email incorrect';
-        } elseif ($valueErreur  == 4) {
+        } elseif ($valueErreur == 4) {
             $erreur = 'Les mots de passe ne correspondent pas';
-        } elseif ($valueErreur  == 5) {
+        } elseif ($valueErreur == 5) {
             $erreur = 'Email déjà utilisé';
-        } elseif ($valueErreur  == 6) {
+        } elseif ($valueErreur == 6) {
             $erreur = 'Champ obligatoire incomplet';
-        } elseif ($valueErreur  == 7) {
+        } elseif ($valueErreur == 7) {
             $erreur = 'Serveur introuvable!';
-        } elseif ($valueErreur  == 13) {
+        } elseif ($valueErreur == 13) {
             $erreur = 'Vous devez être connecté <a href="../client/actions/connexion.php"> > Page connexion < </a>';
         } else {
             $erreur = $_SESSION["erreur"];
@@ -48,7 +50,7 @@ function afficherErreur($erreur = null){
 
         unset($_SESSION["erreur"]);
     }
-    if (isset($erreur)){
+    if (isset($erreur)) {
         echo '
           <div class="erreur">
             <p>' . $erreur . '</p>
@@ -57,7 +59,8 @@ function afficherErreur($erreur = null){
     }
 }
 
-function getListe(PDO $bdd,$fromTable,Array $cond = [],Array $condLike = [],$askSelect = '*',$specialCond= "") { //Cond pour Condition
+function getListe(PDO $bdd, $fromTable, Array $cond = [], Array $condLike = [], $askSelect = '*', $specialCond = "")
+{ //Cond pour Condition
     //Pour utiliser cette fonction il faut lui envoyer :
     //La bdd
     //Le(s) table au quel on veux accéder
@@ -74,18 +77,18 @@ function getListe(PDO $bdd,$fromTable,Array $cond = [],Array $condLike = [],$ask
     foreach ($condLike as $key2 => $arg2) {
         $query = "{$query} AND {$key2} LIKE :p_{$key2} ";
     }
-    if (!empty($specialCond)){
+    if (!empty($specialCond)) {
         $query = "{$query} AND {$specialCond}";
     }
     //Affectation des paramètres (Pour rappel les paramètres (p_arg) sont une sécuritée)
     $statement = $bdd->prepare($query);
     foreach ($cond as $key => $arg) {
-        $para = ':p_'.$key;
+        $para = ':p_' . $key;
         $statement->bindValue($para, $arg);
     }
     foreach ($condLike as $key => $arg) {
         $arg = $arg . '%';
-        $para = ':p_'.$key;
+        $para = ':p_' . $key;
         $statement->bindValue($para, $arg);
     }
     //On réalise la requète et on renvoie le résultat
@@ -99,7 +102,8 @@ function getListe(PDO $bdd,$fromTable,Array $cond = [],Array $condLike = [],$ask
 }
 
 // get tous les genres de la bdd
-function getAllGenresByName($bdd, $genre_name){
+function getAllGenresByName($bdd, $genre_name)
+{
     $query = "SELECT * FROM genres AS g ";
 
 // si on rentre pas quelque chose de vide ou égal à 0
@@ -124,11 +128,12 @@ function getAllGenresByName($bdd, $genre_name){
 }
 
 // get toutes les infos des livres de la base de données, peut être cherché par nom
-function getAllBooks($bdd, $book_name){
+function getAllBooks($bdd, $book_name)
+{
     $query = "SELECT * FROM livres AS l, pays AS p, auteurs AS a, genres AS g WHERE a.id_pays = p.id_pays 
                 AND g.id_genre=l.id_genre AND l.id_auteur = a.id_auteur";
 
-    if(!empty($book_name)){
+    if (!empty($book_name)) {
         $query .= " AND l.nom_livre LIKE :l_nom_livre";
     }
 
@@ -152,10 +157,11 @@ function getAllBooks($bdd, $book_name){
 
 
 // get toutes les infos des auteurs et leurs pays, peut être cherché par son nom
-function getAllAuthors($bdd, $author_name){
+function getAllAuthors($bdd, $author_name)
+{
     $query = "SELECT * FROM auteurs AS a, pays AS p WHERE a.id_pays = p.id_pays";
 
-    if(!empty($author_name)){
+    if (!empty($author_name)) {
         $query .= " AND a.nom_auteur LIKE :a_nom_auteur";
     }
 
@@ -178,7 +184,8 @@ function getAllAuthors($bdd, $author_name){
 }
 
 //get toutes les infos des pays de la base de donnée
-function getAllCountries($bdd){
+function getAllCountries($bdd)
+{
     $query = "SELECT * FROM pays ORDER BY nom_pays ASC;";
 
     $statement = $bdd->query($query);
@@ -189,7 +196,8 @@ function getAllCountries($bdd){
     return $pays;
 }
 
-function getEveryGenre($bdd){
+function getEveryGenre($bdd)
+{
     $query = "SELECT * FROM genres ORDER BY genre ASC;";
 
     $statement = $bdd->query($query);
@@ -200,10 +208,27 @@ function getEveryGenre($bdd){
     return $genres;
 }
 
-function getAllGenres($bdd, $genre_name){
+function getGenreName($bdd, $id_genre)
+{
+    $query = "SELECT * FROM genres AS a WHERE a.id_genre LIKE :a_id_auteur";
+
+    $genre = null;
+    $statement = $bdd->prepare($query);
+    $statement->bindParam(':a_id_auteur', $id_genre);
+
+    if ($statement->execute()) {
+        $genre = $statement->fetch(PDO::FETCH_OBJ);
+        // Fermeture de la ressource
+        $statement->closeCursor();
+    }
+    return $genre;
+}
+
+function getAllGenres($bdd, $genre_name)
+{
     $query = "SELECT * FROM genres AS g ";
 
-    if(!empty($genre_name)){
+    if (!empty($genre_name)) {
         $query .= " WHERE g.genre LIKE :genre_name";
     }
 
@@ -225,7 +250,8 @@ function getAllGenres($bdd, $genre_name){
     return $genres;
 }
 
-function getAllAuthorsName($bdd){
+function getAllAuthorsName($bdd)
+{
     $query = "SELECT * FROM auteurs ORDER BY nom_auteur ASC;";
 
     $statement = $bdd->query($query);
@@ -238,7 +264,8 @@ function getAllAuthorsName($bdd){
 
 
 // get tous les livres d'un auteur en particulier
-function getAllBooksByAuthor($bdd, $id_auteur){
+function getAllBooksByAuthor($bdd, $id_auteur)
+{
     $query = "SELECT * FROM livres AS l, auteurs AS a, genres AS g 
                 WHERE l.id_genre=g.id_genre AND l.id_auteur = a.id_auteur AND l.id_auteur LIKE :l_id_auteur 
                 ORDER BY l.date_parution DESC";
@@ -255,7 +282,8 @@ function getAllBooksByAuthor($bdd, $id_auteur){
     return $books;
 }
 
-function getAllBooksByGenre($bdd, $id_genre){
+function getAllBooksByGenre($bdd, $id_genre)
+{
     $query = "SELECT * FROM livres AS l, auteurs AS a, genres AS g 
                 WHERE l.id_genre=g.id_genre AND l.id_auteur = a.id_auteur AND l.id_genre LIKE :l_id_genre 
                 ORDER BY l.date_parution DESC";
@@ -289,10 +317,11 @@ function getAuthorById($bdd, $id_auteur){
     return $author;
 } */
 
-function getAllClients($bdd, $client_name){
+function getAllClients($bdd, $client_name)
+{
     $query = "SELECT * FROM clients AS c, pays AS p WHERE c.id_pays=p.id_pays";
 
-    if(!empty($client_name)){
+    if (!empty($client_name)) {
         $query .= " AND c.nom_client LIKE :c_nom_client";
     }
 
@@ -314,7 +343,8 @@ function getAllClients($bdd, $client_name){
     return $clients;
 }
 
-function getAllReservationsByClient($bdd, $id_client){
+function getAllReservationsByClient($bdd, $id_client)
+{
     $query = "SELECT * FROM planning AS pl, livres AS l, auteurs AS a WHERE a.id_auteur=l.id_auteur AND pl.id_livre=l.id_livre AND id_client=:pl_id_client";
 
     $reservations = null;
@@ -329,10 +359,11 @@ function getAllReservationsByClient($bdd, $id_client){
     return $reservations;
 }
 
-function getAllReservations($bdd, $dateDebut){
+function getAllReservations($bdd, $dateDebut)
+{
     $query = "SELECT * FROM planning AS pl, livres AS l, clients AS c WHERE pl.id_livre=l.id_livre AND c.id_client=pl.id_client";
 
-    if(!empty($dateDebut)){
+    if (!empty($dateDebut)) {
         $query .= " AND pl.dateDebut LIKE :pl_dateDebut";
     }
 

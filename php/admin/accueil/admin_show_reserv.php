@@ -4,21 +4,22 @@ require_once("../../../php/fonctions/head.php");
 
 if (isAdmin($id_client) == true) {
 
-    $dateDebut = ''; //on initialise la variable
-    if (isset($_POST['dateDebut'])) {
-        $dateDebut = htmlspecialchars($_POST['dateDebut']);
-    }
-    echo '<a href="../gestion_reservations/ajouter_reservation.php" class="button_add">Ajouter une réservation</a>';
-    ?>
+$dateDebut = ''; //on initialise la variable
+if (isset($_POST['dateDebut'])) {
+    $dateDebut = htmlspecialchars($_POST['dateDebut']);
+}
+echo '<a href="../gestion_reservations/ajouter_reservation.php" class="button_add">Ajouter une réservation</a>';
+?>
 
 
-    <div class="top_research">
+<div class="top_research">
 
-        <form class="research" action="" method="post">
-            <input type="text" name="dateDebut" value="<?php $dateDebut ?>" maxlength="30">
-            <input type="submit" name="" value="Valider">
-        </form>
-    </div>
+    <form class="research" action="" method="post">
+        <input type="text" name="dateDebut" value="<?php $dateDebut ?>" maxlength="30">
+        <input type="submit" name="" value="Valider">
+    </form>
+</div>
+<div class="centered_alone">
 
     <?php
 
@@ -30,24 +31,22 @@ if (isAdmin($id_client) == true) {
         if (!empty($reservs)) {
             foreach ($reservs as $reserv) {
                 ?>
-                <p>La reservation commence le <span id="date"><?= $reserv->dateDebut ?></span> et se termine le <span
-                            id="date"><?= $reserv->dateFin ?></span> faite par
-                    <a href="../gestion_client/infos_client.php?id_client=<?= $reserv->id_client ?>"><?= $reserv->nom_client ?> <?= $reserv->prenom_client ?></a>
-                    pour le livre
-                    <a href="../../client/infos/infos_livre.php?id_livre=<?= $reserv->id_livre ?>"><?= $reserv->nom_livre ?></a>
-                </p>
+                <div class="object_of_list">
+                    <p>Emprunt de <a class="object_title"
+                                     href="../../client/infos/infos_livre.php?id_livre=<?= $reserv->id_livre ?>"><?= $reserv->nom_livre ?></a>
+                        par <a class="object_title"
+                               href="../gestion_client/infos_client.php?id_client=<?= $reserv->id_client ?>"><?= $reserv->nom_client ?> <?= $reserv->prenom_client ?></a>
+                        du <?= $reserv->dateDebut ?> au <?= $reserv->dateFin ?>
+                    </p>
+                </div>
                 <?php
             }
         }
     }
-
-} else {
-    echo $doNotHaveAccess;
-}
-
-
-?>
-
-
+    } else {
+        echo $doNotHaveAccess;
+    }
+    ?>
+</div>
 </body>
 </html>

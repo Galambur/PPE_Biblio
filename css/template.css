@@ -78,6 +78,7 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 1.2em;
 }
 
 .centered_body {
@@ -94,6 +95,21 @@ h1 {
     align-items: center;
     margin: 0 auto;
     font-size: 2em;
+}
+
+.object_of_list{
+    border:dashed 1px #000f03;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+    width : 600px;
+}
+
+.object_title {
+    color:#395802;
+}
+
+.object_action {
+    color:#02480e;
 }
 
 a {
@@ -126,13 +142,10 @@ p {
     border: 1px solid #0B1200;
     border-radius: 5px;
     text-align: center;
+    padding:5px;
 }
 
 /* LISTES */
 .eachBook .eachAuthor{
     margin : 0px 0px 5px 0px;
-}
-
-#date {
-    color : #154A1C;
 }
