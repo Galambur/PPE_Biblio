@@ -26,7 +26,7 @@ $bdd = getDataBase();
         <h1><a href="../../../_index.php">Bibliothèque de Montpellier</a></h1>
         <?php
         if($id_client == null) {
-            echo '<a href="/php/client/actions/creation_compte.php" class="button">Se connecter / S\'inscrire</a>';
+            echo '<a href="/php/admin/gestion_client/ajouter_client.php" class="button">Se connecter / S\'inscrire</a>';
         } else {
             echo '<a href="/php/client/infos/mon_compte.php" class="button">Mon compte</a>';
         }

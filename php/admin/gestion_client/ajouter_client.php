@@ -1,18 +1,22 @@
 <header>
     <?php
-    require_once ("../../../php/fonctions/head.php");
+    require_once("../../../php/fonctions/head.php");
     ?>
 
 </header>
 <body>
-<?php
-if (isAdmin($id_client) == true) {
+<div class="connexion_body">
+    <div class="connexion_form">
+        <h2>Créer un compte</h2>
 
-    ?>
+        <?php
+        if (isset($_SESSION['id_client']) && $_SESSION['id_client'] == 0) {
+            echo '<form action="../../admin/gestion_client/add_client.php" method="post">';
+        } else {
+            echo '<form action="../../client/actions/create_account.php" method="post">';
+        }
+        ?>
 
-    <h2>Ajouter un client</h2>
-
-    <form action="add_client.php" method="post">
         <label for="nom_client">Nom :</label>
         <input type="text" name="nom_client" value=""/><br/><br/>
 
@@ -20,9 +24,13 @@ if (isAdmin($id_client) == true) {
         <input type="text" name="prenom_client" value=""/><br/><br/>
 
         <label for="sexe_client">Sexe :</label>
-        <input type="text" name="sexe_client" value=""/><br/><br/>
+        <select name="sexe_client">
+            <option value='H'>Homme</option>
+            <option value='F'>Femme</option>
+            <option value='A'>Autre</option>
+        </select><br/><br/>
 
-        <label for="dateNaiss_client">Date de naissance (YYYY-MM-DD) :</label>
+        <label for="dateNaiss_client">Date de naissance (YYYY-MM-DD):</label>
         <input type="text" name="dateNaiss_client" value=""/><br/><br/>
 
         <label for="id_pays">Pays :</label>
@@ -38,20 +46,20 @@ if (isAdmin($id_client) == true) {
             ?>
         </select><br/><br/>
 
-        <label for="email">Son email :</label>
+        <label for="email">Email :</label>
         <input type="text" name="email" value=""/><br/><br/>
 
-        <label for="mdp">Son mdp :</label>
+        <label for="mdp">Mot de passe:</label>
         <input type="password" name="mdp" value=""/><br/><br/>
 
         <label for="amende"></label>
 
-        <input type="submit" class="button_form" value="Ajouter"/>
-    </form>
-    <?php
-} else {
-    echo $doNotHaveAccess;
-}
-?>
+        <input type="submit" class="button_add" value="Valider"/><br>
+        </form>
+        <br>
+
+        <a href="connexion.php" class="connexion_button"> Vous avez déjà un compte ? Connectez vous</a>
+    </div>
+</div>
 
 </body>

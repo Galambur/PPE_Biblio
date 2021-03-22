@@ -57,7 +57,7 @@ if($statement->execute()){
     }
 
     if ($_SESSION["erreur"] != null) {
-        header('Location: creation_compte.php');
+        header('Location: Location: ../../admin/gestion_client/ajouter_client.php');
     } else {
         header('Location: ../../../_index.php');
     }
