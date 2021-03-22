@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/client/actions/create_account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/infos_auteur.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/infos_genre.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/infos_livre.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/accueil/client_accueil_author.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/accueil/client_accueil_author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/accueil/client_accueil_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/accueil/client_accueil_book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/accueil/client_accueil_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/accueil/client_accueil_genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/ajouter_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/ajouter_reserv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/infos/infos_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/infos_auteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/infos/infos_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/infos_genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fonctions/fonctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/fonctions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/creation_compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/creation_compte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +77,10 @@
       <workItem from="1614605641589" duration="7000" />
       <workItem from="1614766248466" duration="2327000" />
       <workItem from="1614769546312" duration="1585000" />
-      <workItem from="1614780101090" duration="8436000" />
+      <workItem from="1614780101090" duration="8484000" />
+      <workItem from="1616075762268" duration="604000" />
+      <workItem from="1616167846287" duration="3048000" />
+      <workItem from="1616412191707" duration="1690000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -197,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614786431750</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="continué à regler des fichiers en double">
+      <created>1614788586100</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614788586100</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +231,7 @@
     <MESSAGE value="l'id du livre et du client s'envoient automatiquement, il faut prendre en compte si c'est un admin qui le fait et lui proposer la possibilité de mettre l'id du client lui même peut être ?&#10;réglé d'autre problemes aussi" />
     <MESSAGE value="commencé à changer le css" />
     <MESSAGE value="supprimé les fichiers admin en double" />
-    <option name="LAST_COMMIT_MESSAGE" value="supprimé les fichiers admin en double" />
+    <MESSAGE value="continué à regler des fichiers en double" />
+    <option name="LAST_COMMIT_MESSAGE" value="continué à regler des fichiers en double" />
   </component>
 </project>

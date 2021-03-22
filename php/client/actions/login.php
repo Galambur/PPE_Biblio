@@ -1,13 +1,11 @@
 <?php
 
-
 session_start();
 
 require_once("../../../php/fonctions/head.php");
 
 $bdd = getDatabase();
 $pl_login = $_POST;
-var_dump($pl_login);
 
 if (isset($bdd)) {
     $_SESSION["erreur"] = null;
