@@ -2,19 +2,21 @@
 require_once("../../../php/fonctions/head.php");
 
 
-// Supprimer dans la table
+// La requête qui va supprimer dans la table
 $query = "DELETE FROM livres 
             WHERE id_livre=:l_id_livre;";
 
-// Etape 1
+// Recuperation de la bdd
 $bdd = getDataBase();
-// Etape 2.1 : prepare
+
+// Preparation de la requete
 $statement = $bdd->prepare($query);
-// Etape 2.2 : paramètres
+
+// On relie le paramètre a notre identifiant
 $statement->bindParam(':l_id_livre', $_POST['id_livre']);
-// Etape 2.3 : exécution
+
 if ($statement->execute()) {
-    // Rediriger vers la page de liste des chambres
+    // Rediriger vers la page de liste des livres
     header('Location: ../../client/accueil/client_accueil_book.php');
 } else {
     echo "Essaye encore !";

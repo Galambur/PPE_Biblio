@@ -3,17 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/ajouter_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/ajouter_auteur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/modifier_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/modifier_auteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/supprimer_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/supprimer_auteur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/infos_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/infos_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/supprimer_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/supprimer_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/ajouter_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_genres/ajouter_genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_genres/supprimer_genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_genres/supprimer_genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/ajouter_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/ajouter_livre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/modifier_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/modifier_livre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/add_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/add_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/delete_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/delete_livre.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/supprimer_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/supprimer_livre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/ajouter_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/ajouter_reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/ajouter_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/ajouter_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/create_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/create_account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/modifier_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/modifier_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/update_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/update_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fonctions/fonctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/fonctions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,9 @@
       <workItem from="1616075762268" duration="604000" />
       <workItem from="1616167846287" duration="3048000" />
       <workItem from="1616412191707" duration="10595000" />
-      <workItem from="1616449108317" duration="698000" />
+      <workItem from="1616449108317" duration="759000" />
+      <workItem from="1616492917664" duration="3969000" />
+      <workItem from="1616942665704" duration="7485000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -248,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616426959305</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="amélioré le css">
+      <created>1616449862158</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1616449862158</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +292,7 @@
     <MESSAGE value="supprimé un des doublons pour la création de compte" />
     <MESSAGE value="sécurisé la modification d'informations" />
     <MESSAGE value="modifié le css" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifié le css" />
+    <MESSAGE value="amélioré le css" />
+    <option name="LAST_COMMIT_MESSAGE" value="amélioré le css" />
   </component>
 </project>

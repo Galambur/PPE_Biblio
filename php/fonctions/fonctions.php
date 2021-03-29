@@ -68,7 +68,7 @@ function getListe(PDO $bdd, $fromTable, Array $cond = [], Array $condLike = [], 
     // array(arg1 => value1, arg2 => value 2, etc)
     //Il est possible de demander les conditions avec like aussi
     //Avec un exemple :
-    // array( 'idClient' => 15, 'prenom' => 'Maxime')
+    // array( 'idClient' => 15, 'prenom' => 'Gaelle')
     $query = "SELECT {$askSelect} FROM {$fromTable} WHERE 1 ";
     //Etape 1 : On génère la requête sql avec les arguments demandés :
     foreach ($cond as $key => $arg) {

@@ -23,7 +23,7 @@ if (isAdmin($id_client) == true){
     }
     ?>
     <div class="centered_alone">
-    <h2>Modifier un auteur</h2>
+    <h2>Modifier <?= $author->prenom_auteur ?><?= $author->nom_auteur ?></h2>
 
     <form action="update_auteur.php" method="post">
         <label for="id_auteur">Identifiant : </label>
@@ -38,10 +38,19 @@ if (isAdmin($id_client) == true){
         <label for="dateNaiss_auteur">Date de naissance :</label>
         <input type="text" name="dateNaiss_auteur" value="<?= $author->dateNaiss_auteur ?>"/><br><br>
 
-        <label for="id_pays">Id pays :</label>
-        <input type="text" name="id_pays" value="<?= $author->id_pays ?>"/><br><br>
-
+        <label for="id_pays">Pays :</label>
         <input type="hidden" name="id_auteur" value="<?= $author->id_auteur ?>"/>
+        <?php
+        $bdd = getDataBase();
+        $countries = getAllCountries($bdd);
+        ?>
+        <select name="id_pays">
+            <?php
+            foreach ($countries as $country) {
+                echo "<option value='" . $country->id_pays . "'" . ">" . $country->nom_pays . "</option>";
+            }
+            ?>
+        </select>
 
         <input type="submit" value="Valider"/>
     </form>

@@ -19,19 +19,36 @@ if (isAdmin($id_client) == true){
         <label for="dateFin">Date fin :</label>
         <input type="text" name="dateFin" value=""/><br/><br/>
 
-        <label for="rendu">Rendu :</label>
-        <select name="rendu" id="">
-            <option value="1">Oui</option>
-            ;
-            <option value="0">Non</option>
-            ;
-        </select><br><br>
+        <label for="id_client">Client :</label>
+        <?php
+        // tous les pays
+        $bdd = getDataBase();
+        $clients = getAllClients($bdd, "");
+        ?>
+        <select name="id_client">
+            <?php
+            foreach ($clients as $client) {
+                echo "<option value='" . $client->id_client . "'" . ">" . $client->nom_client . " " . $client->prenom_client . "</option>";
+            }
+            ?>
+        </select><br/><br/>
 
-        <label for="id_client">Id client :</label>
-        <input type="text" name="id_client" value=""/><br/><br/>
+        <label for="id_livre">Livre emprunté :</label>
+        <?php
+        // tous les pays
+        $bdd = getDataBase();
+        $books = getAllBooks($bdd, "");
+        ?>
+        <select name="id_livre">
+            <?php
+            foreach ($books as $book) {
+                echo "<option value='" . $book->id_client . "'" . ">" . $book->nom_livre . "</option>";
+            }
+            ?>
+        </select>
 
-        <label for="id_livre">Son id_livre :</label>
-        <input type="text" name="id_livre" value=""/><br/><br/>
+        <label for="rendu"></label>
+        <br/><br/>
 
         <input type="submit" class="button_form" value="Ajouter"/>
     </form>

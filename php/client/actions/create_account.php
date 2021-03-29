@@ -23,45 +23,61 @@ $statement->bindParam(':c_id_pays', $_POST['id_pays']);
 $statement->bindParam(':c_email', $_POST['email']);
 $statement->bindParam(':c_mdp', $_POST['mdp']);
 
+
+// si la création du compte se passe correctement
 if($statement->execute()){
 
+    // création d'une session
     session_start();
 
+    // On stock ce qu'on reçoit avec le formulaire de la page de création de compte dans la variable $pl_login
+    // Cela va être utilisé pour connecter automatiquement l'utilisateur
     $pl_login = $_POST;
 
+    // la base de données n'est pas vide
     if (isset($bdd)) {
+        // initialisation de $_SESSION["erreur"] : on pourra reconnaître le type d'erreur par sa valeur
         $_SESSION["erreur"] = null;
+
+        // Les champs mot de passe et email sont remplis
         if (isset($pl_login['mdp']) AND isset($pl_login['email'])) {
             $mdp = htmlspecialchars($_POST['mdp']);
+            // on récupère le mot de passe et l'id du client ayant pour email l'email fournie dans le formulair
             $liste = getListe($bdd, 'clients', Array("email" => $pl_login['email']), Array(), 'mdp, id_client');
+
+            // dans le cas où on trouve un utilisateur qui correspond à l'email
             if (!empty($liste)) {
+                // un seul utilisateur trouvé avec cette adresse mail
                 if (count($liste) == 1) {
                     $id_client = $liste[0]->id_client;
                     $_SESSION['id_client'] = $id_client;
                 } elseif (count($liste) > 1) {
+                    // Il existe plusieurs clients avec cette adresse mail
                     $_SESSION['id_client'] = $id_client;
-                    //Erreur : Il existe plusieurs client avec la même adresse mail!! Grosse erreur d'identification!
                     $_SESSION["erreur"] = 1;
                 } else {
-                    //Erreur fréquente : le mot de passe ou l'email ne correspond pas
+                    // Le mot de passe ne correspond pas à cette adresse mail
                     $_SESSION["erreur"] = 2;
                 }
             } else {
-                //Erreur aussi fréquente : L'email n'est pas reconnu
+                // Aucun utilisateur ne possède cette adresse mail
                 $_SESSION["erreur"] = 3;
             }
         }
     } else {
+        // La base de données est vide
         $_SESSION["erreur"] = 7;
-
     }
 
     if ($_SESSION["erreur"] != null) {
-        header('Location: Location: ../../admin/gestion_client/ajouter_client.php');
+        // il y a eu une erreur lors de la connexion
+        header('Location: Location: ajouter_client');
     } else {
+        // il n'y a eu aucune erreur lors de la connexion, on retourne à la page d'accueil
         header('Location: ../../../_index.php');
     }
 } else {
+    // la requête de création de compte a échoué
     echo "Essaye encore";
 }
 

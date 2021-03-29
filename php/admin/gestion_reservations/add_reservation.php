@@ -5,6 +5,9 @@ $query = "INSERT INTO planning (dateDebut, dateFin, rendu, id_client, id_livre)
             VALUES (:c_dateDebut, :c_dateFin, :c_rendu, :c_id_client, :c_id_livre)";
 
 $bdd=getDataBase();
+if ($_POST['rendu'] == null ){
+    $_POST['rendu'] = 0;
+}
 
 $statement = $bdd->prepare($query);
 
