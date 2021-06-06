@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/infos/mon_compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/mon_compte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/add_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/add_reserv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/infos_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/infos_livre.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +96,7 @@
       <workItem from="1621522892206" duration="1494000" />
       <workItem from="1622031578928" duration="24000" />
       <workItem from="1622972503664" duration="592000" />
-      <workItem from="1622993357887" duration="7111000" />
+      <workItem from="1622993357887" duration="9289000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -279,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622999284388</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="lancement de la procédure stockée manuellement">
+      <created>1623000706437</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1623000706437</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +325,7 @@
     <MESSAGE value="amélioré le css" />
     <MESSAGE value="commentaires pour le rendu de situation" />
     <MESSAGE value="réglé quelques problèmes&#10;reste à faire la page modif reserv&#10;reste à lancer la procédure stockée" />
-    <option name="LAST_COMMIT_MESSAGE" value="réglé quelques problèmes&#10;reste à faire la page modif reserv&#10;reste à lancer la procédure stockée" />
+    <MESSAGE value="lancement de la procédure stockée manuellement" />
+    <option name="LAST_COMMIT_MESSAGE" value="lancement de la procédure stockée manuellement" />
   </component>
 </project>

@@ -38,13 +38,13 @@
         if (isAdmin($id_client) == true){
         ?>
         <a class='object_action'
-           href='../actions/ajouter_reserv.php?id_livre=<?= $book->id_livre ?>&id_client=<?= $id_client ?>'>Réserver ce
-            livre</a></p>
+           href='../../admin/gestion_reservations/ajouter_reservation.php'>Ajouter une réservation</a></p>
 <?php
 } else {
     ?>
     <a class='object_action'
-       href='../../admin/gestion_reservations/ajouter_reservation.php'>Ajouter une réservation</a></p>
+       href='../actions/ajouter_reserv.php?id_livre=<?= $book->id_livre ?>&id_client=<?= $id_client ?>'>Réserver ce
+        livre</a></p>
     <?php
 }
 ?>
