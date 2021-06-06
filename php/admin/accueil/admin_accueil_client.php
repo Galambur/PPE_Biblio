@@ -22,6 +22,14 @@ if (isset($_POST['client_name'])) {
     <?php
 
     $bdd = getDataBase();
+
+    // raffraichissement manuel des amendes
+    // le rafraichissement se fait tous les jours mais on peut le faire manuellement
+    $mysql = 'CALL calculAmende()';
+    $q = $bdd->query($mysql);
+    $q->execute();
+
+
     $clients = null;
 
     if (!empty($bdd)) {

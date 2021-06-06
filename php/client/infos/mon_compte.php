@@ -11,6 +11,11 @@
 
 
         $bdd = getDataBase();
+        // raffraichissement manuel des amendes
+        // le rafraichissement se fait tous les jours mais on peut le faire manuellement
+        $mysql = 'CALL calculAmende()';
+        $q = $bdd->query($mysql);
+        $q->execute();
 
         if (isset($_SESSION['id_client'])) {
             $id_client = $_SESSION['id_client'];
