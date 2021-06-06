@@ -15,7 +15,7 @@ $mysql = "CALL addReserv('" . $_POST['dateDebut'] . "', '" .
 
 
 if($q = $bdd->query($mysql)){
-    header('Location: ../accueil/client_accueil_book.php');
+    header('Location: ../accueil/client_accueil_book.php'); 
 }  else {
     echo "Essaye encore";
 }
