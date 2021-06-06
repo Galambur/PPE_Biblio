@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
+    <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="commentaires pour le rendu de situation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_auteur/modifier_auteur.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_auteur/modifier_auteur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_index.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/add_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/add_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/delete_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/delete_livre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_livres/supprimer_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_livres/supprimer_livre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/ajouter_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/ajouter_reservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/ajouter_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/ajouter_client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/client/actions/create_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/create_account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/infos/modifier_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/modifier_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/infos/update_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/update_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fonctions/fonctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/fonctions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fonctions/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/head.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +90,12 @@
       <workItem from="1616449108317" duration="759000" />
       <workItem from="1616492917664" duration="3969000" />
       <workItem from="1616942665704" duration="7485000" />
+      <workItem from="1617030304211" duration="805000" />
+      <workItem from="1617031966328" duration="748000" />
+      <workItem from="1617095978193" duration="4000" />
+      <workItem from="1621522892206" duration="1494000" />
+      <workItem from="1622031578928" duration="24000" />
+      <workItem from="1622972503664" duration="592000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -257,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616449862158</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="commentaires pour le rendu de situation">
+      <created>1617030354776</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1617030354776</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +301,7 @@
     <MESSAGE value="sécurisé la modification d'informations" />
     <MESSAGE value="modifié le css" />
     <MESSAGE value="amélioré le css" />
-    <option name="LAST_COMMIT_MESSAGE" value="amélioré le css" />
+    <MESSAGE value="commentaires pour le rendu de situation" />
+    <option name="LAST_COMMIT_MESSAGE" value="commentaires pour le rendu de situation" />
   </component>
 </project>

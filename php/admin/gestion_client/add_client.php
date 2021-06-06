@@ -30,7 +30,7 @@ $statement->bindParam(':c_mdp', $_POST['mdp']);
 
 if($statement->execute()){
     // si la requête réussi, on revient sur la page d'accueil, l'utilisateur est créé
-    header('Location: ../../../_index.php');
+    header('Location: ../../../index.php');
 } else {
     // sinon, on spécifie qu'une erreur s'est produite
     echo "Essaye encore";

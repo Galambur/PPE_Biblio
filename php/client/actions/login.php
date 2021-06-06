@@ -39,9 +39,9 @@ if (isset($bdd)) {
 }
 
 if ($_SESSION["erreur"] != null) {
-    header('Location: ../../admin/gestion_client/ajouter_client.php');
+    header('Location: /php/client/actions/connexion.php');
 } else {
-    header('Location: ../../../_index.php');
+    header('Location: ../../../index.php');
 }
 
 

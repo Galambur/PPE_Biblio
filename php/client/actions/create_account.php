@@ -74,7 +74,7 @@ if($statement->execute()){
         header('Location: Location: ajouter_client');
     } else {
         // il n'y a eu aucune erreur lors de la connexion, on retourne à la page d'accueil
-        header('Location: ../../../_index.php');
+        header('Location: ../../../index.php');
     }
 } else {
     // la requête de création de compte a échoué
