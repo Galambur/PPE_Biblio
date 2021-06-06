@@ -74,7 +74,14 @@
         <br>
 
         <!-- Bouton qui redirige vers notre page de connexion -->
-        <a href="connexion.php" class="connexion_button"> Vous avez déjà un compte ? Connectez vous</a>
+        <?php
+        if (isset($_SESSION['id_client']) && $_SESSION['id_client'] == 0) {
+
+        } else {
+            echo '<a href="connexion.php" class="connexion_button"> Vous avez déjà un compte ? Connectez vous</a>';
+        }
+        ?>
+
     </div>
 </div>
 

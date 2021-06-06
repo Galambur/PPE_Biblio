@@ -9,7 +9,7 @@ if (isset($_POST['client_name'])) {
 }
 ?>
 
-<a href="../gestion_client/ajouter_client.php" class="button_add">Ajouter un client</a>
+<a href="../../client/actions/ajouter_client.php" class="button_add">Ajouter un client</a>
 
 <div class="top_research">
     <form class="research" action="" method="post">

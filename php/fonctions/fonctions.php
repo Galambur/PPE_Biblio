@@ -80,7 +80,7 @@ function getListe(PDO $bdd, $fromTable, Array $cond = [], Array $condLike = [], 
     if (!empty($specialCond)) {
         $query = "{$query} AND {$specialCond}";
     }
-    //Affectation des paramètres (Pour rappel les paramètres (p_arg) sont une sécuritée)
+    //Affectation des paramètres (Pour rappel les paramètres (p_arg) sont une sécurité)
     $statement = $bdd->prepare($query);
     foreach ($cond as $key => $arg) {
         $para = ':p_' . $key;

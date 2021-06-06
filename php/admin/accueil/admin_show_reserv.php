@@ -38,6 +38,7 @@ echo '<a href="../gestion_reservations/ajouter_reservation.php" class="button_ad
                                href="../gestion_client/infos_client.php?id_client=<?= $reserv->id_client ?>"><?= $reserv->nom_client ?> <?= $reserv->prenom_client ?></a>
                         du <?= $reserv->dateDebut ?> au <?= $reserv->dateFin ?>
                     </p>
+                    <a class="object_action" href="../gestion_reservations/modifier_reservation.php?idReserv=<?= $reserv->idReserv ?>">Modifier</a>
                 </div>
                 <?php
             }

@@ -11,10 +11,10 @@ if (isset($bdd)) {
     $_SESSION["erreur"] = null;
     if (isset($pl_login['mdp']) AND isset($pl_login['email'])) {
         $mdp = htmlspecialchars($_POST['mdp']);
-        $liste = getListe($bdd, 'clients', Array("email" => $pl_login['email']), Array(), 'mdp, id_client');
-        var_dump($liste);
+        $liste = getListe($bdd, 'clients', Array("email" => $pl_login['email'], "mdp" => $pl_login['mdp']), Array(), 'mdp, id_client');
+        //var_dump($liste);
         if (!empty($liste)) {
-            if (count($liste) == 1 /*&& mdp_verify($mdp, $liste[0]->mdp)*/) {
+            if (count($liste) == 1) {
                 $id_client = $liste[0]->id_client;
                 $_SESSION['id_client'] = $id_client;
 

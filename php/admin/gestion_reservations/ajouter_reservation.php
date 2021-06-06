@@ -42,12 +42,16 @@ if (isAdmin($id_client) == true){
         <select name="id_livre">
             <?php
             foreach ($books as $book) {
-                echo "<option value='" . $book->id_client . "'" . ">" . $book->nom_livre . "</option>";
+                echo "<option value='" . $book->id_livre . "'" . ">" . $book->nom_livre . "</option>";
             }
             ?>
-        </select>
+        </select><br/><br/>
 
-        <label for="rendu"></label>
+        <label for="rendu">Rendu ?</label>
+        <select name="rendu">
+            <option value="1">Oui</option>
+            <option value="0">Non</option>
+        </select>
         <br/><br/>
 
         <input type="submit" class="button_form" value="Ajouter"/>

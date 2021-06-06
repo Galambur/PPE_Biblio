@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="commentaires pour le rendu de situation">
+    <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/add_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/add_client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/create_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/create_account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_accueil_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/accueil/admin_show_reserv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_client/infos_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_client/infos_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/ajouter_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/ajouter_reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/ajouter_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/ajouter_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/actions/ajouter_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/ajouter_reserv.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/client/actions/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/fonctions/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/infos_livre.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/infos_livre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/client/infos/update_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/infos/update_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/fonctions/fonctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/fonctions/fonctions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +36,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php/admin/gestion_reservations" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\PPE_Biblio\php\admin\gestion_reservations" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\PPE_Biblio\php\client\actions" />
     </key>
@@ -96,6 +103,7 @@
       <workItem from="1621522892206" duration="1494000" />
       <workItem from="1622031578928" duration="24000" />
       <workItem from="1622972503664" duration="592000" />
+      <workItem from="1622993357887" duration="5787000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -265,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617030354776</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="commentaires pour le rendu de situation">
+      <created>1622993547786</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1622993547786</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

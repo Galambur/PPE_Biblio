@@ -16,6 +16,7 @@
 
         <label for="dateFin">Date fin </label>
         <input type="text" name="dateFin" value=""/><br/><br/>
+
         <input type="text" name="rendu" hidden value="0"/>
         <input type="text" name="id_client" hidden value="<?= $_GET['id_client'] ?>"/>
         <input type="text" name="id_livre" hidden value="<?= $_GET['id_livre'] ?>"/>

@@ -31,12 +31,15 @@ $statement->bindParam(':c_mdp', $_POST['mdp']);
 $statement->bindParam(':c_email', $_POST['email']);
 
 
-if ($statement->execute()) {
-    // Rediriger vers la page de liste des clietns
+if ($statement->execute() && isset($_SESSION['id_client']) && $_SESSION['id_client'] == 0) {
+    header('Location: ../../admin/accueil/admin_accueil_client.php');
+} else if ($statement->execute()){
+    // Rediriger vers la page de liste des clients
     header('Location: mon_compte.php');
 } else {
     // la requête a échoué
     echo "Essaye encore !";
+
 }
 
 
