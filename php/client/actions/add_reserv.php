@@ -11,17 +11,12 @@ $mysql = "CALL addReserv('" . $_POST['dateDebut'] . "', '" .
     $_POST['dateFin'] . "', " .
     $_POST['rendu'] . ", " .
     $_POST['id_client'] . ", " .
-    $_POST['id_client'] . ")";
-
-var_dump($mysql);
-$q = $bdd->query($mysql);
+    $_POST['id_livre'] . ")";
 
 
-if($q->execute() && isAdmin($id_client) == true){
-    header('Location: ../accueil/admin_show_reserv.php');
-} else if ($q->execute()){
+if($q = $bdd->query($mysql)){
     header('Location: ../accueil/client_accueil_book.php');
-} else {
+}  else {
     echo "Essaye encore";
 }
 ?>
