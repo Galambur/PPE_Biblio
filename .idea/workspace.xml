@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30b264ed-5c3b-49a5-95da-ddad70d9e9c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin/gestion_reservations/add_reservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/client/actions/add_reserv.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/client/actions/add_reserv.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +94,7 @@
       <workItem from="1622031578928" duration="24000" />
       <workItem from="1622972503664" duration="592000" />
       <workItem from="1622993357887" duration="10231000" />
-      <workItem from="1623068240253" duration="3201000" />
+      <workItem from="1623068240253" duration="5221000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -315,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623072940899</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="retour avec les résultats de addReserv ok">
+      <created>1623073547845</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1623073547845</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +361,7 @@
     <MESSAGE value="lancement de la procédure stockée manuellement" />
     <MESSAGE value="procédure stockée add reservation" />
     <MESSAGE value="reste a avoir le retour de l'ajout de reserv" />
-    <option name="LAST_COMMIT_MESSAGE" value="reste a avoir le retour de l'ajout de reserv" />
+    <MESSAGE value="retour avec les résultats de addReserv ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="retour avec les résultats de addReserv ok" />
   </component>
 </project>
