@@ -7,11 +7,12 @@ if ($_POST['rendu'] == null ){
     $_POST['rendu'] = 0;
 }
 
+
 $mysql = "CALL addReserv('" . $_POST['dateDebut'] . "', '" .
     $_POST['dateFin'] . "', " .
     $_POST['rendu'] . ", " .
     $_POST['id_client'] . ", " .
-    $_POST['id_livre'] . ")";
+    $_POST['id_livre'] . ", @result )";
 
 
 
