@@ -96,7 +96,7 @@
       <workItem from="1622031578928" duration="24000" />
       <workItem from="1622972503664" duration="592000" />
       <workItem from="1622993357887" duration="10231000" />
-      <workItem from="1623068240253" duration="2674000" />
+      <workItem from="1623068240253" duration="3201000" />
     </task>
     <task id="LOCAL-00001" summary="déplacé index.php">
       <created>1602747166258</created>
@@ -308,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623004670805</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="reste a avoir le retour de l'ajout de reserv">
+      <created>1623072940899</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1623072940899</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +355,7 @@
     <MESSAGE value="réglé quelques problèmes&#10;reste à faire la page modif reserv&#10;reste à lancer la procédure stockée" />
     <MESSAGE value="lancement de la procédure stockée manuellement" />
     <MESSAGE value="procédure stockée add reservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="procédure stockée add reservation" />
+    <MESSAGE value="reste a avoir le retour de l'ajout de reserv" />
+    <option name="LAST_COMMIT_MESSAGE" value="reste a avoir le retour de l'ajout de reserv" />
   </component>
 </project>

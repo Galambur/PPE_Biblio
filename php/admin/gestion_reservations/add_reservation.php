@@ -14,11 +14,20 @@ $mysql = "CALL addReserv('" . $_POST['dateDebut'] . "', '" .
     $_POST['id_client'] . ", " .
     $_POST['id_livre'] . ", @result )";
 
+$q = $bdd->query($mysql);
 
+$row = $bdd->query("SELECT @result AS result")->fetch(PDO::FETCH_ASSOC);
 
-if($q = $bdd->query($mysql)){
+// on peut ajouter
+if ($row && $row['result'] == 0) {
+    if($q = $bdd->query($mysql)){
+        header('Location: ../accueil/admin_show_reserv.php');
+    }  else {
+        echo "Essaye encore";
+    }
+} else {
     header('Location: ../accueil/admin_show_reserv.php');
-}  else {
-    echo "Essaye encore";
 }
+
+
 ?>
